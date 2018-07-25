@@ -1,0 +1,17 @@
+/* .wrapper {} */
+
+.wrapper__container { width: 100%; }
+
+.wrapper__container:nth-child(2n) {
+  background-color: $light-grey;
+}
+
+.wrapper__content {
+  max-width: $max-width; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 10px; /* 3 */
+  padding-right: 10px; /* 3 */
+  width: 100%; /* 1 */
+  text-align: center;
+ }
