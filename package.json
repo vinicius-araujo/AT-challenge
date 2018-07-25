@@ -1,0 +1,22 @@
+{
+  "name": "at-challenge",
+  "version": "1.0.0",
+  "description": "Javascript challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius-araujo/AT-challenge.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Vinicius araujo <vinisergio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinicius-araujo/AT-challenge/issues"
+  },
+  "homepage": "https://github.com/vinicius-araujo/AT-challenge#readme"
+}
