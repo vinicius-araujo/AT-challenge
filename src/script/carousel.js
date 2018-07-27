@@ -3,7 +3,7 @@ export const Carousel = (function () {
         parent: document.getElementsByClassName('carousel'),
         content: document.getElementsByClassName('carousel-content'),
         items:[],
-        autorRotate: true,
+        autoRotate: true,
         rotateTime: 4000,
         firstItem: 0,
         transition: 'transform 0.3s ease-in-out',
