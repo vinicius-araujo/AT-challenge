@@ -1,16 +1,14 @@
 import style from "./index.scss";
-import { UltimateCarousel } from './script/carousel';
+import { Carousel } from './script/carousel';
 const itemList = [{
   description: "Craze is one of the most great things in the World",
-  author: "Vinicius"
+  author: "Sarah Hunt"
 }, {
-  description: "Alguma coisa Muito legal",
-  author: "Vinicius Araujo"
+  description: "Craze is really amazing, I've benn learning a lot",
+  author: "Bill"
 }]
-var taskCarousel = new UltimateCarousel({
+new Carousel({
   items: itemList,
   parent: document.getElementsByClassName('carousel'),
-  content: document.getElementsByClassName('carousel-content'),
-  height: 180
-});
-taskCarousel.init();
+  content: document.getElementsByClassName('carousel-content')
+}).init();

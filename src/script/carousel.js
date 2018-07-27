@@ -1,12 +1,11 @@
-export const UltimateCarousel = (function () {
+export const Carousel = (function () {
     var defaults = {
         parent: document.getElementsByClassName('carousel'),
         content: document.getElementsByClassName('carousel-content'),
         items:[],
         autorRotate: true,
         rotateTime: 4000,
-        height: 180,
-        firstItem: 1,
+        firstItem: 0,
         transition: 'transform 0.3s ease-in-out',
         //"item" ou "page"
     };
@@ -27,7 +26,7 @@ export const UltimateCarousel = (function () {
 	}
 });
 
-UltimateCarousel.prototype.init = function () {
+Carousel.prototype.init = function () {
     if (this.options.parent.length > 0 && this.options.content.length > 0) {
         this.createDots();
         this.createItens();
@@ -39,7 +38,7 @@ UltimateCarousel.prototype.init = function () {
     this.goToItem(this.options.firstItem);
     this.timeOut = setTimeout(() =>  this.autoNavigate() , this.options.rotateTime);
 }
-UltimateCarousel.prototype.autoNavigate = function () {
+Carousel.prototype.autoNavigate = function () {
   clearTimeout(this.timeOut);
   if (this.options.autorRotate) {
     this.currentNavigation++;
@@ -52,7 +51,7 @@ UltimateCarousel.prototype.autoNavigate = function () {
   }
 }
 
-UltimateCarousel.prototype.goToItem = function (item) {
+Carousel.prototype.goToItem = function (item) {
   clearTimeout(this.timeOut);
   const position = (this.calculateContent() * item) * -1;
   var ul = this.getChild();
@@ -62,7 +61,7 @@ UltimateCarousel.prototype.goToItem = function (item) {
   ul.style.transition = this.options.transition;
 }
 
-UltimateCarousel.prototype.createItens = function () {
+Carousel.prototype.createItens = function () {
   const itemList = this.options.items
   .map((item, index) => `<li class="carousel__item"><span class="carousel__item--desc">"${item.description}"</span><p>${item.author}</p></li>`)
   .join(" ");
@@ -72,7 +71,7 @@ UltimateCarousel.prototype.createItens = function () {
 
 }
 
-UltimateCarousel.prototype.createDots = function () {
+Carousel.prototype.createDots = function () {
   const dotList = this.options.items
   .map((item, index) => `<li class="hr-list__item carousel__dot ${index === this.options.firstItem?"dot--active" : ""}" data-index="${index}"></li>`)
   .join(" ");
@@ -91,7 +90,7 @@ UltimateCarousel.prototype.createDots = function () {
     })
 }
 
-UltimateCarousel.prototype.activeDot = function (item) {
+Carousel.prototype.activeDot = function (item) {
   const dotElements = document.querySelectorAll(".carousel__dot");
   dotElements.forEach((element, index) => {
     if(item === index){
@@ -102,11 +101,11 @@ UltimateCarousel.prototype.activeDot = function (item) {
   })
 }
 
-UltimateCarousel.prototype.calculateContent = function () {
+Carousel.prototype.calculateContent = function () {
     return this.options.content[0].offsetWidth || this.options.content[0].clientWidth;
 }
 
-UltimateCarousel.prototype.getChild = function () {
+Carousel.prototype.getChild = function () {
     var i, j;
     if (!this.options.content[0].firstElementChild && !this.options.content[0].children) {
         for (j = this.options.content[0].childNodes.length, i = 0; i < j; i++){
