@@ -80,13 +80,13 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/vinicius-araujo/AT-challenge/tags).
 
 ## Authors
 
 [Vinicius Araujo](https://github.com/vinicius-araujo/)
 
-See also the list of [contributors](https://github.com/vinicius-araujo/dazn-challenge/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/vinicius-araujo/AT-challenge/contributors) who participated in this project.
 
 ## License
 
