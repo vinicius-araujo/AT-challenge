@@ -1,0 +1,49 @@
+.carousel-content {
+  overflow: hidden;
+  width: calc(100% - 1rem);
+  margin:0 auto;
+}
+
+ul.carousel__list {
+  width: calc(100% * 2);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.carousel__item {
+  position: relative;
+  display: inline;
+  flex: 1 1 100%;
+  margin: 0 0 1rem 0;
+  p {
+    color:$title-color;
+  }
+}
+
+.carousel__item--desc {
+  font-style: italic;
+  font-size: 1.875rem;
+}
+
+.carousel__btn {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.carousel__dot {
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  &.dot--active {
+    background-color: $primary-color;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

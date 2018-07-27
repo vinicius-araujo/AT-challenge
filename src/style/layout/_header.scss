@@ -1,3 +1,36 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+header {
+  color:$white;
+  background-color: $primary-color;
+  height: 600px;
+  .wrapper__container {
+    height: 100%;
+  }
+  .wrapper__content {
+    margin-top: 0;
+    height: inherit;
+  }
+  .content__item {
+    text-align: left;
+    height: inherit;
+  }
+  .content__list {
+    height: inherit;
+  }
+
+  .hr-list {
+    justify-content: start;
+  }
+
+  h1 {
+    color:inherit;
+    font-size: 4.5rem;
+    margin-top: 0;
+    font-family: 'Pacifico', cursive;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}

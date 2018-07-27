@@ -25,7 +25,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $primary-color;
   text-decoration: none;
 
   @include on-event {
@@ -34,7 +34,12 @@ a {
   }
 }
 
-
 body {
   background-color: $white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

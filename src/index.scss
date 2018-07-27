@@ -15,11 +15,16 @@
   'style/base/helpers';
 
 @import
+  'style/layout/list',
   'style/layout/grid',
   'style/layout/header',
   'style/layout/footer';
 
 @import
+  'style/components/card',
+  'style/components/carousel',
+  'style/components/pricing',
+  'style/components/link',
   'style/components/button';
 
 @import

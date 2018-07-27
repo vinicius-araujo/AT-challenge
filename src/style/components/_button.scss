@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn {
+  height: 50px;
+  transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -webkit-transition: background-color .2s linear;
+  padding: 0.85rem;
+  color: $white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn.btn--primary {
+  background-color: $primary-color-dark;;
+  &:hover {
+      background-color:$primary-color-dark;
+  }
+}

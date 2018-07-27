@@ -1,0 +1,27 @@
+/*.text-list { }*/
+
+.text-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0.5rem;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+  .feather-chevron-right {
+    color:$title-color;
+  }
+}
+.text-list__desc {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.hr-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hr-list__item {
+  margin-right: 1rem;
+}
