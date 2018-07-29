@@ -40,7 +40,7 @@ Carousel.prototype.init = function () {
 }
 Carousel.prototype.autoNavigate = function () {
   clearTimeout(this.timeOut);
-  if (this.options.autorRotate) {
+  if (this.options.autoRotate) {
     this.currentNavigation++;
     if (this.currentNavigation >= this.options.items.length){
       this.currentNavigation = 0;

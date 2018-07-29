@@ -18,7 +18,8 @@ a.link-rounded--small {
   height: 40px;
   width: 40px;
 }
-a.link-rounded:hover {
+a.link-rounded:hover,
+a.link-rounded:focus {
   opacity: 1;
   color:inherit;
   text-decoration: none;

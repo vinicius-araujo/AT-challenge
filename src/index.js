@@ -4,7 +4,7 @@ const itemList = [{
   description: "Craze is one of the most great things in the World",
   author: "Sarah Hunt"
 }, {
-  description: "Craze is really amazing, I've benn learning a lot",
+  description: "Craze is really amazing, I've been learning a lot",
   author: "Bill"
 }]
 new Carousel({
