@@ -1,0 +1,42 @@
+.price-card {
+  width: calc(25% - 1rem);
+  height: 100%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: $white;
+}
+
+.price-card__title {
+  background-color: $primary-color;
+  color: $white;
+  padding:1rem 0;
+  font-size: 1.875rem;
+}
+
+.price-card__price {
+  color: $title-color;
+  .price-text {
+    font-size: 3rem;
+  }
+  .price-text--coin{
+    position: relative;
+    top: -1rem;
+  }
+}
+
+.price-card__list {
+  ul li {
+    margin: 0.5rem 1rem;
+    border-top: 1px solid $light-grey;
+    padding: 0.5rem 0 0 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+
+.price-card__btn {
+  background-color: $primary-color;
+  padding: 1rem 0;
+}

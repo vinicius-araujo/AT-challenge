@@ -13,7 +13,8 @@ This project uses [webpack](https://webpack.js.org/) to genereate and create bun
 Build for *production*
 
 ```
-npm build
+npm run build
+
 ```
 
 Build for *dev*

@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  background-color: $light-grey;
+  height: 130px;
+  .hr-list {
+    height: 100%;
+  }
+  .hr-list__item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  p {
+    margin: 1rem;
+  }
+}

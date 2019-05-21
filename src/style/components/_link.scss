@@ -1,0 +1,50 @@
+a.link-rounded {
+  background-color: $light-grey;
+  color:inherit;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: opacity .2s ease-out;
+ -moz-transition: opacity .2s ease-out;
+ -webkit-transition: opacity .2s ease-out;
+}
+
+a.link-rounded--small {
+  height: 40px;
+  width: 40px;
+}
+a.link-rounded:hover,
+a.link-rounded:focus {
+  opacity: 1;
+  color:inherit;
+  text-decoration: none;
+}
+
+a.link-rounded--dark {
+  background-color: $title-color;
+}
+
+a.link-rounded--light {
+  background-color: $light-grey;
+  color: $white;
+  transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -webkit-transition: background-color .2s ease-out;
+  opacity: 1;
+  &:hover {
+    color: $white;
+    background-color: $primary-color;
+  }
+}
+
+a.link-text {
+  color: $text-color;
+  &:hover {
+    color: $primary-color;
+  }
+}

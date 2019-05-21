@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  color:$white;
+  background-color: $primary-color;
+  background: url('./asset/blue_pattern.jpg') repeat;
+  height: 600px;
+  .wrapper__container {
+    height: 100%;
+  }
+  .wrapper__content {
+    margin-top: 0;
+    height: inherit;
+  }
+  .content__item {
+    text-align: left;
+    height: inherit;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mq(small) {
+      flex: 0 0 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+  }
+
+  .content__item--hand {
+    display: flex;
+    background-image: url('./asset/hand.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+    height: 507px;
+    min-height: 507px;
+    width: 100%;
+    max-width: 439px;
+    position: absolute;
+    bottom: -2rem;
+
+  }
+  .content__list {
+    height: inherit;
+  }
+
+  .hr-list {
+    justify-content: start;
+  }
+
+  h1 {
+    color:inherit;
+    font-size: 4.5rem;
+    margin-top: 0;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 3px $dark-grey;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px $dark-grey;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
